@@ -1,0 +1,117 @@
+/*
+Author: Justin Strigl
+*/
+
+@font-face {
+    font-family: verdana, helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: '28_Days_Later';
+    src: url(fonts/28_Days_Later.ttf);
+}
+
+/************************************************/
+
+html {}
+
+body {
+    background-color: #666;
+}
+
+img {
+    float: left;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+a {
+    color: orange;
+}
+
+a:visited {
+    color: orange;
+}
+
+/************************************************/
+
+#box0 {
+    z-index: 0;
+    position: absolute;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    min-width: 300px;
+    min-height: 200px;
+}
+
+#box1 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    background-color: orange;
+    height: calc(100% - 72px);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.inbox1 {
+    overflow: auto;
+    overflow-y: scroll;
+    min-height: 200px;
+    position: absolute;
+    height: calc(100% - 30px);
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    bottom: 0px;
+    top: 0px;
+    color: orange;
+}
+
+.inbox1>h1 {
+    font-size: 40px;
+}
+
+.inbox1>h2 {
+    font-size: 35px;
+}
+
+.inbox1>h3 {
+    font-size: 30px;
+}
+
+.inbox1>p {
+    font-size: 20px;
+}
+
+#box2 {
+    z-index: 2;
+    background-color: #666;
+    width: calc(30% - 25px);
+}
+
+#box3 {
+    z-index: 2;
+    background-color: #666;
+    width: calc(70% - 25px);
+    right: 0px;
+}
+
+/************************************************/
+
+.inbox1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+    right: 5px;
+}
+
+.inbox1::-webkit-scrollbar {
+    width: 20px;
+    background-color: transparent;
+}
+
+.inbox1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
